@@ -1,0 +1,40 @@
+
+* {
+	font-family: Arial;
+	font-size: large;
+}
+
+body {
+	display: grid;
+/*	justify-content: stretch;*/
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 2fr 1fr;
+	grid-template-areas:
+		'expl expl'
+		'input replace'
+		'output copy';
+}
+
+#explaination {
+	grid-area: expl;
+	text-align: center;
+}
+
+#textInput {
+	grid-area: input;
+}
+
+#textOutput {
+	grid-area: output;
+	resize: none;
+	white-space: nowrap;
+	overflow-x: scroll;
+}
+
+#copyButton {
+	grid-area: copy;
+}
+
+#replaceButton {
+	grid-area: replace;
+}

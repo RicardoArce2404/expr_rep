@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' href='styles.css'>
+	<title>ExprRep</title>
+</head>
+
+<body>
+	<div id='explaination'>
+		Cada palabra se reemplaza con el símbolo que le sigue: <br>
+		no: ¬ &emsp; y: ∧ &emsp; o: ∨ &emsp; implica: → &emsp; solo si: ↔ &emsp;
+		implica taut: ⇒ &emsp; solo si taut: ⇔ &emsp; equivale a: ≡
+	</div>
+	<input type='text' id='textInput'>
+	<button onclick='replaceChars()' id='replaceButton'>Reemplazar</button>
+	<textarea rows='1' id='textOutput'></textarea>
+	<button onclick='copyText()' id='copyButton'>Copiar</button>
+	<script src='script.js'></script>
+</body>
+
+</html>
