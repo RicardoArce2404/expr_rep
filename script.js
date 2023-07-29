@@ -25,7 +25,9 @@ function replaceChars() {
 
 async function copyText() {
   let text = document.getElementById('textOutput').value;
-  try { await navigator.clipboard.writeText(text); }
+  try {
+    await navigator.clipboard.writeText(text);
+    alert('Texto copiado ✔️');
+  }
   catch (err) { alert('Error al copiar: ', err); }
-  finally { alert('Texto copiado ✔️') }
 }

@@ -6,8 +6,7 @@
 
 body {
 	display: grid;
-/*	justify-content: stretch;*/
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: auto 30px 50px;
 	grid-template-columns: 2fr 1fr;
 	grid-template-areas:
 		'expl expl'
