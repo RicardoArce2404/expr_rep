@@ -17,6 +17,7 @@ body {
 #explaination {
 	grid-area: expl;
 	text-align: center;
+	margin: 20px 10px 20px;
 }
 
 #textInput {

@@ -10,13 +10,23 @@
 
 <body>
 	<div id='explaination'>
+
 		Cada palabra se reemplaza con el símbolo que le sigue: <br>
-		no: ¬ &emsp; y: ∧ &emsp; o: ∨ &emsp; implica: → &emsp; solo si: ↔ &emsp;
-		implica taut: ⇒ &emsp; solo si taut: ⇔ &emsp; equivale a: ≡
+		<div>
+			<div>no: ¬</div>
+			<div>y: ∧</div>
+			<div>o: ∨</div>
+			<div>implica: →</div>
+			<div>solo si: ↔</div>
+			<div>implica taut: ⇒</div>
+			<div>solo si taut: ⇔</div>
+			<div>equivale a: ≡</div>
+		</div>
+
 	</div>
-	<input type='text' id='textInput' oninput='replaceChars()'>
+	<input id='textInput' oninput='replaceChars()' placeholder='Escriba aquí la expresión'>
 	<button onclick='replaceChars()' id='replaceButton'>Reemplazar</button>
-	<textarea rows='1' id='textOutput'></textarea>
+	<textarea rows='1' id='textOutput' placeholder='Aquí aparecerán los reemplazos'></textarea>
 	<button onclick='copyText()' id='copyButton'>Copiar</button>
 	<script src='script.js'></script>
 </body>
