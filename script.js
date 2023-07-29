@@ -20,7 +20,6 @@ function replaceChars() {
   }
 
   textOutput.value = text;
-  console.log(text)
 
 }
 
